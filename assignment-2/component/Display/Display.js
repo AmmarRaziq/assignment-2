@@ -1,11 +1,11 @@
 "use client"
 import React from 'react';
 
-const Display = ({current, hourly}) => {
+const Display = ({current, hourly,unit}) => {
     return (
         <div className={"display"}>
            <div className={"display-container"}>
-               <h1>{current} °C</h1>
+               <h1>{current} {unit}</h1>
                <h2>{JSON.stringify(hourly)}</h2>
           </div>
 
